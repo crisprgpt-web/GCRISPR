@@ -1,8 +1,16 @@
-Copyright © 2025 [Your Name / Company]
+# License - All Rights Reserved
+
+Copyright © 2025 Douglas Jackson
 
 All rights reserved.
 
-This repository and its contents are proprietary. Redistribution, reproduction, modification, or commercial use is prohibited without explicit written permission.
+This repository and all associated source code, designs, assets, and documentation are proprietary intellectual property of the author. 
 
-For licensing inquiries, partnerships, or commercial interest, contact:
-📧 [GCRISPR.gpt@gmail.com]
+Unauthorized use, reproduction, modification, distribution, or commercial exploitation of any part of this project is strictly prohibited without explicit, written permission.
+
+This software and its concepts are offered for demonstration, discussion, and evaluation purposes only. No rights are granted to third parties under copyright, patent, or trademark law.
+
+For licensing, business inquiries, or commercial usage permissions, contact:
+
+📧 crispr.gpt@gmail.com
+🌐 https://gcrispr.com
