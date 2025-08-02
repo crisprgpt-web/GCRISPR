@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCRISPR Kickstarter Pitch</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    section {
+      height: 100vh;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .scene {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease-in-out;
+    }
+
+    .scene.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h1, h2 {
+      font-size: 3rem;
+      margin: 1rem 0;
+    }
+
+    p {
+      max-width: 600px;
+      font-size: 1.25rem;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background-color: #00ffc8;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.25rem;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: scale(1.1);
+    }
+
+    .bg-grid {
+      background: radial-gradient(#111, #000);
+    }
+
+    .bg-blue {
+      background: linear-gradient(135deg, #0ff, #00f);
+    }
+
+    .bg-purple {
+      background: linear-gradient(135deg, #8000ff, #0000ff);
+    }
+
+    .bg-ai {
+      background: linear-gradient(135deg, #00ffc8, #002b36);
+    }
+
+    .bg-final {
+      background: linear-gradient(to bottom, #111, #000);
+    }
+  </style>
+</head>
+<body>
+
+  <section class="scene bg-grid" id="scene1">
+    <h1>What if you could edit conversations like DNA?</h1>
+    <p>Introducing <strong>GCRISPR</strong> — the world's first GPT genome editor.</p>
+  </section>
+
+  <section class="scene bg-blue" id="scene2">
+    <h2>The Problem</h2>
+    <p>AI prompts are messy and inefficient. There’s no system to track, optimize, and monetize your breakthroughs.</p>
+  </section>
+
+  <section class="scene bg-purple" id="scene3">
+    <h2>The Solution</h2>
+    <p>GCRISPR lets you sequence, analyze, refine, and license your best GPT content — like a bioinformatics lab for your prompts.</p>
+  </section>
+
+  <section class="scene bg-ai" id="scene4">
+    <h2>See It in Action</h2>
+    <p>Visualize your threads. Compare versions. Value your prompts. Unlock your creative genome.</p>
+  </section>
+
+  <section class="scene bg-final" id="scene5">
+    <h1>Join the Revolution</h1>
+    <p>Help bring GCRISPR to life. Be part of the next wave of GPT innovation.</p>
+    <button class="cta-button" onclick="window.open('https://www.kickstarter.com/', '_blank')">Back GCRISPR on Kickstarter</button>
+  </section>
+
+  <script>
+    const scenes = document.querySelectorAll('.scene');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, { threshold: 0.4 });
+
+    scenes.forEach(scene => observer.observe(scene));
+  </script>
+
+</body>
+</html>
